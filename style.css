@@ -52,7 +52,11 @@ header{
 .banner{
     position: absolute;
     top: 12vw;
+<<<<<<< HEAD
     left: 5vw;
+=======
+    left: 12vw;
+>>>>>>> 02822ac2bf04a7595b17f172a227fa4e50da3383
     
 }
 @keyframes moveBanner{
