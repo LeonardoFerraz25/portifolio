@@ -318,3 +318,133 @@ header{
     object-fit: cover;
     width: 100%;
 }
+
+.projetos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 20rem;
+    height: 30rem;
+    position: relative;
+    display: flex;
+}
+
+.card-img-wrapper{
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    background-color: #363636;
+}
+
+.card-img-wrapper img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    opacity: .6;
+    
+}
+
+.card-info{
+    
+    position: absolute;
+    bottom: 0;
+    padding: 1rem 2rem ;
+    text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.856);
+}
+
+.card-info h2{
+    
+    font-family: var(--font03);
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--cor03);
+    position: absolute;
+    bottom: 35px;
+    transition: all ;
+    
+}
+
+.card-info h3{    
+    font-family: var(--font01);
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    transition: all ;
+    
+    
+}
+
+.card-info p {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+    font-family: var(--font02);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    
+}
+
+.card-info button{
+    opacity: 0;
+    visibility: hidden;
+    width: 8rem;
+    height: 2rem;
+    background-image: linear-gradient(to left, var(--cor01), var(--cor03) ,var(--cor05));
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.856);
+    transition: all 1s;
+    
+    
+}
+
+.card-info a{
+    color: white;
+    text-transform: uppercase;
+    
+}
+.card:hover .card-info h3 {
+    animation: moveup 1s;
+    top: -3rem;
+    
+}
+.card:hover .card-info p {
+    opacity: 1;
+    visibility: visible;
+    animation: moveup 1s;
+}
+
+.card:hover .card-info button {
+    opacity: 1;
+    visibility: visible;
+    animation: moveup 1s;
+}
+
+.card:hover .card-info h2 {
+    animation: moveup 1s;
+    top: -5rem;
+    
+}
+
+@keyframes moveup{
+    0%{
+        transform: translateY(10rem) rotateY(-30deg);
+        
+    }
+    100%{
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+    }
+}
+
+#teste{
+    height: 300px;
+}
+
