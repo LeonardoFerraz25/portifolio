@@ -178,6 +178,7 @@ header{
     top: 0;
     right: -20rem;
     transition: all 0.8s;
+    z-index: 1;
 }
 
 .show-menu .sidebar{
@@ -230,7 +231,68 @@ header{
 .social-media i:hover{
     color: var(--cor05);
 }
+.sobre{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
 
+#minha-foto{
+    display: flex;
+    width: 270px;
+    height: 270px;
+    background-color: var(--cor05);
+    border-radius: 50rem;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 8rem;
+    top: 45rem;
+}
+
+#minha-foto img{
+    width: 250px;
+    height: 250px;
+}
+#img-trybe{
+    position: absolute;
+    top: 70rem ;
+    left: 2.5rem;
+    width: 25rem;
+}
+#img-trybe img{
+    width: 100%;
+    object-fit: cover;
+}
+.sobre-mim{
+    width: 50rem;
+    right: 0;
+    position: absolute;
+}
+.sobre-mim h1{
+    font-family: var(--font03);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--cor05);
+    padding-left: 2rem;
+}
+.sobre-mim p{
+    font-family: var(--font02);
+    text-align: justify;
+    width: 40rem ;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    background-color: rgba(85, 85, 85, 0.301);
+    padding: 1rem;
+    border-radius: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
+}
+#espaço{
+    height: 90vh;
+    width: 800px;
+    
+}
 .conhecimentos{
     display: grid;
     grid-template-columns: repeat(16, 1fr);
