@@ -396,6 +396,7 @@ header{
     visibility: hidden;
     width: 8rem;
     height: 2rem;
+    cursor: pointer;
     background-image: linear-gradient(to left, var(--cor01), var(--cor03) ,var(--cor05));
     border: none;
     border-radius: .5rem;
@@ -403,6 +404,10 @@ header{
     transition: all 1s;
     
     
+}
+.card-info button a{
+    padding: 1rem;
+    cursor: pointer;
 }
 
 .card-info a{
