@@ -331,7 +331,7 @@ header{
 }
 
 .sessao-conhecimentos{
-    background-color: #e197a627 ;
+    background-color: #242424 ;
 }
 
 .sessao-header{
@@ -346,13 +346,28 @@ header{
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.37);
     border-bottom: solid 3px var(--cor05);
     margin-bottom: 1.5rem;
+    color: white;
+}
+
+.sessao-header-b {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sessao-header-b h1{
+    font-family: var(--font01);
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.37);
+    border-bottom: solid 3px var(--cor05);
+    margin-bottom: 1.5rem;
     color: #363636;
 }
 
 .conhecimento-header{
     display: flex;
     align-items: center;
-    color: #363636;
+    color: #eee;
 }
 
 .conhecimento-header i{
@@ -368,6 +383,7 @@ header{
 .conhecimento-text{
     font-family: var(--font02);
     margin-top: 1rem;
+    color: #eee;
 }
 
 .conhecimentos-img-wrapper{
@@ -510,8 +526,97 @@ header{
         opacity: 1;
     }
 }
-
-#teste{
-    height: 300px;
+.sessao-header-contato{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+.sessao-header-contato h1{
+    font-family: var(--font01);
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.37);
+    border-bottom: solid 3px var(--cor05);
+    color: white;
 }
 
+.sessao-contatos{
+    width: 100%;
+    height: 100vh;
+    background-color: #242424;    
+}
+
+.form-contato{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.contato-wrapper{
+    width: 60%;
+    height: 30rem;
+    display: flex;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5) ;
+}
+
+.contato-left{
+    width: 35%;
+    background: linear-gradient( rgba(25, 25, 25, 0.171), rgba(22, 22, 22, 0.658)),
+    url(media/predios.jpg); 
+    background-size: cover;
+
+}
+
+.contato-rigth{
+    width: 65%;
+    background-color: #eee;
+    padding: 1rem 3rem 3rem 3rem;
+}
+
+.sessao-contatos form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.input-group{
+    position: relative;
+}
+
+.field{
+    background: transparent;
+    border: none;
+    width: 20rem;
+    font-size: 1.5rem;
+    font-family: var(--font02);
+    border-bottom: 2px dashed #555;
+    outline: none;
+    
+    margin: 2rem;
+}
+
+.field-label{
+    position: absolute;
+    left: 2rem;
+    font-family: var(--font02);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    
+}
+.contato-rigth button{
+    font-size: var(--font03);
+    text-transform: uppercase;
+    padding: 10px 25px;
+    letter-spacing: .1rem;
+    background-image: linear-gradient(to left, var(--cor01), var(--cor03) ,var(--cor05));
+    border: none;
+    box-shadow: 2px 2px 3px black;
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.452);
+    border-radius: 2px;
+    cursor: pointer;
+    
+    
+}
